@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		4BA19308275643EA0051A95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA19307275643EA0051A95B /* AppDelegate.swift */; };
 		4BA1930A275643EA0051A95B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA19309275643EA0051A95B /* SceneDelegate.swift */; };
-		4BA1930C275643EA0051A95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1930B275643EA0051A95B /* ViewController.swift */; };
+		4BA1930C275643EA0051A95B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1930B275643EA0051A95B /* MainViewController.swift */; };
 		4BA1930F275643EA0051A95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA1930D275643EA0051A95B /* Main.storyboard */; };
 		4BA19311275643EE0051A95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA19310275643EE0051A95B /* Assets.xcassets */; };
 		4BA19314275643EE0051A95B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA19312275643EE0051A95B /* LaunchScreen.storyboard */; };
+		4BA1932527564EBA0051A95B /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1932427564EBA0051A95B /* Movies.swift */; };
+		4BA1932727564F050051A95B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1932627564F050051A95B /* NetworkManager.swift */; };
+		4BA1932927574AC80051A95B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1932827574AC80051A95B /* MovieCell.swift */; };
+		4BA1932B2757E5DB0051A95B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1932A2757E5DB0051A95B /* DetailViewController.swift */; };
+		8747771917FD51E6B42363B6 /* Pods_Top250Movie_alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243E01CC2D6C78ECB7B6C4E /* Pods_Top250Movie_alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2243E01CC2D6C78ECB7B6C4E /* Pods_Top250Movie_alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top250Movie_alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA19304275643EA0051A95B /* Top250Movie_alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Top250Movie_alamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA19307275643EA0051A95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA19309275643EA0051A95B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4BA1930B275643EA0051A95B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BA1930B275643EA0051A95B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4BA1930E275643EA0051A95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BA19310275643EE0051A95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BA19313275643EE0051A95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BA19315275643EE0051A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA1932427564EBA0051A95B /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		4BA1932627564F050051A95B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4BA1932827574AC80051A95B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		4BA1932A2757E5DB0051A95B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		571974E5462260D1EFDB6EAC /* Pods-Top250Movie_alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top250Movie_alamofire.release.xcconfig"; path = "Target Support Files/Pods-Top250Movie_alamofire/Pods-Top250Movie_alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		6C1A78657148405C6AE1885E /* Pods-Top250Movie_alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top250Movie_alamofire.debug.xcconfig"; path = "Target Support Files/Pods-Top250Movie_alamofire/Pods-Top250Movie_alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8747771917FD51E6B42363B6 /* Pods_Top250Movie_alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				4BA19306275643EA0051A95B /* Top250Movie_alamofire */,
 				4BA19305275643EA0051A95B /* Products */,
+				946B8577569777E7B3094636 /* Pods */,
+				6CFE8BC12DD1137D08C254B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,92 @@
 		4BA19306275643EA0051A95B /* Top250Movie_alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				4BA19307275643EA0051A95B /* AppDelegate.swift */,
-				4BA19309275643EA0051A95B /* SceneDelegate.swift */,
-				4BA1930B275643EA0051A95B /* ViewController.swift */,
-				4BA1930D275643EA0051A95B /* Main.storyboard */,
-				4BA19310275643EE0051A95B /* Assets.xcassets */,
-				4BA19312275643EE0051A95B /* LaunchScreen.storyboard */,
-				4BA19315275643EE0051A95B /* Info.plist */,
+				4BA1931D27564E630051A95B /* Configs */,
+				4BA1931E27564E6A0051A95B /* Models */,
+				4BA1932227564E820051A95B /* Resourses */,
+				4BA1932127564E7D0051A95B /* Services */,
+				4BA1932327564E950051A95B /* Storyboards */,
+				4BA1932027564E780051A95B /* View */,
+				4BA1931F27564E710051A95B /* ViewControllers */,
 			);
 			path = Top250Movie_alamofire;
+			sourceTree = "<group>";
+		};
+		4BA1931D27564E630051A95B /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				4BA19307275643EA0051A95B /* AppDelegate.swift */,
+				4BA19309275643EA0051A95B /* SceneDelegate.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		4BA1931E27564E6A0051A95B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BA1932427564EBA0051A95B /* Movies.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BA1931F27564E710051A95B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BA1930B275643EA0051A95B /* MainViewController.swift */,
+				4BA1932A2757E5DB0051A95B /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4BA1932027564E780051A95B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BA1932827574AC80051A95B /* MovieCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BA1932127564E7D0051A95B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4BA1932627564F050051A95B /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4BA1932227564E820051A95B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				4BA19310275643EE0051A95B /* Assets.xcassets */,
+				4BA19315275643EE0051A95B /* Info.plist */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		4BA1932327564E950051A95B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4BA19312275643EE0051A95B /* LaunchScreen.storyboard */,
+				4BA1930D275643EA0051A95B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6CFE8BC12DD1137D08C254B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2243E01CC2D6C78ECB7B6C4E /* Pods_Top250Movie_alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		946B8577569777E7B3094636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C1A78657148405C6AE1885E /* Pods-Top250Movie_alamofire.debug.xcconfig */,
+				571974E5462260D1EFDB6EAC /* Pods-Top250Movie_alamofire.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BA19318275643EF0051A95B /* Build configuration list for PBXNativeTarget "Top250Movie_alamofire" */;
 			buildPhases = (
+				E1BC0241E6DB1DE43F905FF7 /* [CP] Check Pods Manifest.lock */,
 				4BA19300275643EA0051A95B /* Sources */,
 				4BA19301275643EA0051A95B /* Frameworks */,
 				4BA19302275643EA0051A95B /* Resources */,
+				8E95075CFF2E5D58F65D8BC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +227,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E95075CFF2E5D58F65D8BC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Top250Movie_alamofire/Pods-Top250Movie_alamofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Top250Movie_alamofire/Pods-Top250Movie_alamofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Top250Movie_alamofire/Pods-Top250Movie_alamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1BC0241E6DB1DE43F905FF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Top250Movie_alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BA19300275643EA0051A95B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA1930C275643EA0051A95B /* ViewController.swift in Sources */,
+				4BA1930C275643EA0051A95B /* MainViewController.swift in Sources */,
 				4BA19308275643EA0051A95B /* AppDelegate.swift in Sources */,
+				4BA1932927574AC80051A95B /* MovieCell.swift in Sources */,
+				4BA1932727564F050051A95B /* NetworkManager.swift in Sources */,
+				4BA1932527564EBA0051A95B /* Movies.swift in Sources */,
 				4BA1930A275643EA0051A95B /* SceneDelegate.swift in Sources */,
+				4BA1932B2757E5DB0051A95B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +424,7 @@
 		};
 		4BA19319275643EF0051A95B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1A78657148405C6AE1885E /* Pods-Top250Movie_alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,27 +432,30 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7T9FUXX6ZC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Top250Movie_alamofire/Info.plist;
+				INFOPLIST_FILE = Top250Movie_alamofire/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.myhomework.Top250Movie-alamofire";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4BA1931A275643EF0051A95B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571974E5462260D1EFDB6EAC /* Pods-Top250Movie_alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,22 +463,24 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7T9FUXX6ZC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Top250Movie_alamofire/Info.plist;
+				INFOPLIST_FILE = Top250Movie_alamofire/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.myhomework.Top250Movie-alamofire";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
