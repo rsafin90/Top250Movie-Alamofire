@@ -1,0 +1,6 @@
+framework module Pods_Top250Movie_alamofire {
+  umbrella header "Pods-Top250Movie_alamofire-umbrella.h"
+
+  export *
+  module * { export * }
+}
