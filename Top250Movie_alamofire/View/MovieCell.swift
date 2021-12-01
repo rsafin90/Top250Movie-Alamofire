@@ -9,6 +9,7 @@ import UIKit
 
 class MovieCell: UICollectionViewCell {
     
+    // MARK: - Outlets
     @IBOutlet weak var filmPoster: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     

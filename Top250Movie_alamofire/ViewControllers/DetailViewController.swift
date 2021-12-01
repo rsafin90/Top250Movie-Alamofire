@@ -27,12 +27,6 @@ class DetailViewController: UIViewController {
     @IBAction func tapToShare(_ sender: Any) {
         let shareController = UIActivityViewController(activityItems: [movieLabel, moviePoster!],
                                                        applicationActivities: nil)
-        shareController.completionWithItemsHandler = { _, bool, _, _ in
-            if bool == true {
-                print("Successful!")
-            }
-        }
         present(shareController, animated: true, completion: nil)
     }
 }
-
