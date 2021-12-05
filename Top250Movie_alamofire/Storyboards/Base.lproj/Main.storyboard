@@ -56,10 +56,15 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ZU0-62-K3y">
+                                            <rect key="frame" x="90" y="90" width="20" height="20"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="ZU0-62-K3y" firstAttribute="centerX" secondItem="kf5-pA-0Gu" secondAttribute="centerX" id="0XU-fX-MsL"/>
                                         <constraint firstAttribute="trailing" secondItem="b94-Sl-Dkd" secondAttribute="trailing" id="0pp-uq-FXd"/>
                                         <constraint firstAttribute="bottom" secondItem="b94-Sl-Dkd" secondAttribute="bottom" id="6fH-Hm-HnU"/>
+                                        <constraint firstItem="ZU0-62-K3y" firstAttribute="centerY" secondItem="kf5-pA-0Gu" secondAttribute="centerY" id="FWa-uX-jWq"/>
                                         <constraint firstItem="b94-Sl-Dkd" firstAttribute="top" secondItem="kf5-pA-0Gu" secondAttribute="top" id="KSU-8v-7xI"/>
                                         <constraint firstItem="b94-Sl-Dkd" firstAttribute="leading" secondItem="kf5-pA-0Gu" secondAttribute="leading" id="uVI-NP-neH"/>
                                     </constraints>
@@ -71,6 +76,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="activityIndicator" destination="ZU0-62-K3y" id="hTN-5e-tju"/>
                                     <outlet property="filmPoster" destination="b94-Sl-Dkd" id="QGr-Rw-fsv"/>
                                     <segue destination="zW3-oH-aDA" kind="presentation" identifier="showMovie" modalPresentationStyle="pageSheet" id="W5A-Es-34c"/>
                                 </connections>
@@ -85,7 +91,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pv-9N-7pG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="-82"/>
+            <point key="canvasLocation" x="215.94202898550725" y="-82.366071428571431"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="DCU-N8-Mxo">

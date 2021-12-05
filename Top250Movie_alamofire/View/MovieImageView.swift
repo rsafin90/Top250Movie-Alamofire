@@ -25,7 +25,7 @@ class MovieImageView: UIImageView {
             // Save image to cache
             self.saveDataToCache(with: data, and: response)
             if imageURL.lastPathComponent == response.url?.lastPathComponent {
-//                print("URL: ", imageURL.lastPathComponent)
+ //               print("URL: ", imageURL.lastPathComponent)
                 self.image = UIImage(data: data)
             }
         }
@@ -43,7 +43,7 @@ class MovieImageView: UIImageView {
         let request = URLRequest(url: url)
         guard let cachedResponse = URLCache.shared.cachedResponse(for: request) else { return nil }
         guard url.lastPathComponent == cachedResponse.response.url?.lastPathComponent else { return nil }
-//        print("Cache: ", url.lastPathComponent)
+        print("Cache: ", url.lastPathComponent)
         return UIImage(data: cachedResponse.data)
     }
 }
