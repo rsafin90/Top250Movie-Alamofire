@@ -33,6 +33,6 @@ class MovieCell: UICollectionViewCell {
     }
     
     func configure(with movie: Movie?) {
-            filmPoster.fetchImage(from: movie?.image ?? "")
+        filmPoster.fetchImage(from: movie?.image ?? "")
     }
 }
