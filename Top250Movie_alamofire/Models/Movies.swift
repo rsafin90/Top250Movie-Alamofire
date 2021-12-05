@@ -16,7 +16,7 @@ struct Movie: Decodable {
         image = movieData["image"] as? String
     }
     
-    static func getMovies(from value: (Any)) -> [Movie] {
+    static func getMovies(from value: Any) -> [Movie] {
         guard let jsonData = value as? [String: Any] else { return [] }
         guard let moviesData = jsonData["items"] as? [Any] else { return [] }
         guard let object = moviesData as? [[String: Any]] else { return [] }

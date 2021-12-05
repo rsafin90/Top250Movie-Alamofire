@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9FD511275CF42000FA2280 /* MovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FD510275CF42000FA2280 /* MovieImageView.swift */; };
 		4BA19308275643EA0051A95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA19307275643EA0051A95B /* AppDelegate.swift */; };
 		4BA1930A275643EA0051A95B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA19309275643EA0051A95B /* SceneDelegate.swift */; };
 		4BA1930C275643EA0051A95B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1930B275643EA0051A95B /* MainViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		2243E01CC2D6C78ECB7B6C4E /* Pods_Top250Movie_alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top250Movie_alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FD510275CF42000FA2280 /* MovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageView.swift; sourceTree = "<group>"; };
 		4BA19304275643EA0051A95B /* Top250Movie_alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Top250Movie_alamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA19307275643EA0051A95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA19309275643EA0051A95B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA1932827574AC80051A95B /* MovieCell.swift */,
+				4B9FD510275CF42000FA2280 /* MovieImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				4BA1932927574AC80051A95B /* MovieCell.swift in Sources */,
 				4BA1932727564F050051A95B /* NetworkManager.swift in Sources */,
 				4BA1932527564EBA0051A95B /* Movies.swift in Sources */,
+				4B9FD511275CF42000FA2280 /* MovieImageView.swift in Sources */,
 				4BA1930A275643EA0051A95B /* SceneDelegate.swift in Sources */,
 				4BA1932B2757E5DB0051A95B /* DetailViewController.swift in Sources */,
 			);
@@ -433,6 +437,7 @@
 				DEVELOPMENT_TEAM = 7T9FUXX6ZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Top250Movie_alamofire/Resourses/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Our app needs permission to write photos from your photos library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -444,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.myhomework.Top250Movie-alamofire";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -464,6 +469,7 @@
 				DEVELOPMENT_TEAM = 7T9FUXX6ZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Top250Movie_alamofire/Resourses/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Our app needs permission to write photos from your photos library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -475,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.myhomework.Top250Movie-alamofire";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
