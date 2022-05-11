@@ -2,24 +2,20 @@
 //  NetworkManager.swift
 //  Top250Movie_alamofire
 //
-//  Created by Руслан Сафин on 30.11.2021.
+//  Created by Ruslan Safin on 30.11.2021.
 //
 
 import Foundation
 import Alamofire
 
 enum NetworkError: Error {
-    case invalidURL
-    case noData
-    case decodingError
+    case invalidURL, noData, decodingError
 }
 
 class NetworkManager {
     
-    // MARK: - Public properties
     static let shared = NetworkManager()
     
-    // MARK: - Private properties
     private let urlAdress = "https://imdb-api.com/en/API/Top250Movies/k_a27czju9"
     
     private init() {}
@@ -55,5 +51,4 @@ class ImageNetwork {
             }
         }.resume()
     }
-    
 }

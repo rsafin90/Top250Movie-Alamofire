@@ -2,12 +2,13 @@
 //  Movies.swift
 //  Top250Movie_alamofire
 //
-//  Created by Руслан Сафин on 30.11.2021.
+//  Created by Ruslan Safin on 30.11.2021.
 //
 
 import Foundation
 
 struct Movie: Decodable {
+    
     let fullTitle: String?
     let image: String?
     

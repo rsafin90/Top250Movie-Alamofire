@@ -2,22 +2,18 @@
 //  MovieImageView.swift
 //  Top250Movie_alamofire
 //
-//  Created by Руслан Сафин on 05.12.2021.
+//  Created by Ruslan Safin on 05.12.2021.
 //
 
 import UIKit
 
 class MovieImageView: UIImageView {
+    
     func fetchImage(from url: String) {
-        guard let imageURL = URL(string: url) else { return
-            image = #imageLiteral(resourceName: "NoImage")
-        }
+        guard let imageURL = URL(string: url) else { return image = #imageLiteral(resourceName: "noImage") }
         
         // Use image from cache
-        if let cachedImage = getCachedImage(from: imageURL) {
-            image = cachedImage
-            return
-        }
+        if let cachedImage = getCachedImage(from: imageURL) { image = cachedImage }
         
         // Download image from url
         ImageNetwork.shared.fetchImage(from: imageURL) { data, response in
@@ -25,7 +21,6 @@ class MovieImageView: UIImageView {
             // Save image to cache
             self.saveDataToCache(with: data, and: response)
             if imageURL.lastPathComponent == response.url?.lastPathComponent {
-                //               print("URL: ", imageURL.lastPathComponent)
                 self.image = UIImage(data: data)
             }
         }
@@ -43,7 +38,7 @@ class MovieImageView: UIImageView {
         let request = URLRequest(url: url)
         guard let cachedResponse = URLCache.shared.cachedResponse(for: request) else { return nil }
         guard url.lastPathComponent == cachedResponse.response.url?.lastPathComponent else { return nil }
-        //       print("Cache: ", url.lastPathComponent)
+        
         return UIImage(data: cachedResponse.data)
     }
 }
